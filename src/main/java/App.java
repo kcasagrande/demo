@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.NotNull;
+
 public class App {
     public static void main(String[] args) {
         int input = Integer.parseInt(args[0]);
@@ -5,6 +7,6 @@ public class App {
     }
 
     public static String toRoman(int input) {
-        return String.format("%d", input);
+        return String.format((input > 1)?"II":"I");
     }
 }

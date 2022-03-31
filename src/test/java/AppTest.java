@@ -7,4 +7,11 @@ public class AppTest {
         String roman = App.toRoman(input); // Étape 2 : exécution
         assert(roman.equals("I")); // Étape 3 : vérification
     }
+
+    @Test
+    void testRomanTwo() {
+        int input = 2; // Étape 1 : initialisation
+        String roman = App.toRoman(input); // Étape 2 : exécution
+        assert(roman.equals("II")); // Étape 3 : vérification
+    }
 }
